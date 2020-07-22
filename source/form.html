@@ -44,8 +44,89 @@
 
 <main class="page-form">
   <div class="page-form__wrapper">
-    <h1 class="page-form__header">Каталог товаров</h1>
+    <h1 class="page-form__header">Вязание на заказ</h1>
   </div>
+
+  <p class="page-form__text">
+    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+  </p>
+
+  <form class="page-form__list" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">Тип</legend>
+
+      <input type="radio" id="interior" name="type"  value="interior" checked>
+      <label class="page-form__value page-form__value--radio" for="interior">Аксессуар для интерьера</label>
+
+      <input type="radio" id="toy" name="type" value="toy">
+      <label class="page-form__value page-form__value--radio" for="toy">Детская игрушка</label>
+    </fieldset>
+
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">Цвет</legend>
+
+      <input type="checkbox" id="colorChoice1" name="color" value="white" checked>
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice1">Белый</label>
+
+      <input type="checkbox" id="colorChoice2" name="color" value="grey" checked>
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice2">Серый</label>
+
+      <input type="checkbox" id="colorChoice3" name="color" value="tiffany">
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice3">«Тиффани»</label>
+
+      <input type="checkbox" id="colorChoice4" name="color" value="black">
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice4">Черный</label>
+
+      <input type="checkbox" id="colorChoice5" name="color" value="pink">
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice5">Розовый</label>
+
+      <input type="checkbox" id="colorChoice6" name="color" value="orange">
+      <label class="page-form__value page-form__value--checkbox" for="colorChoice6">Оранжевый</label>
+    </fieldset>
+
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">ФИО</legend>
+
+      <input type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*" required>
+      <label class="page-form__value page-form__value--name" for="firstName">Имя:</label>
+
+      <input type="text" id="lastName" name="lastName" placeholder="Укажите фамилию*" required>
+      <label class="page-form__value page-form__value--name" for="lastName">Фамилия:</label>
+
+      <input type="text" id="middleName" name="middleName" placeholder="Отчество, если желаете">
+      <label class="page-form__value page-form__value--name" for="middleName">Фамилия:</label>
+
+    </fieldset>
+
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">Тел</legend>
+
+      <input type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}">
+      <label class="page-form__value page-form__value--tel" for="tel"></label>
+    </fieldset>
+
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">E-mail</legend>
+
+      <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
+      <label class="page-form__value page-form__value--email" for="email"></label>
+    </fieldset>
+
+    <fieldset class="page-form__item">
+      <legend class="page-form__legend">Доп</legend>
+
+      <textarea id="add" name="add" rows="5" cols="33">Опишите все ваши пожелания к заказу</textarea>
+      <label class="page-form__value page-form__value--add" for="add"></label>
+    </fieldset>
+
+    <p class="page-form__extra">
+      *Поля обязательны для заполнения
+    </p>
+
+    <button class="button" type="submit">
+      Отправить заказ
+    </button>
+  </form>
 
 </main>
 
