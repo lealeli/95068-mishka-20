@@ -1,0 +1,80 @@
+.list-advantages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-advantages__item {
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 63px 0 21px 0;
+  position: relative;
+
+  &--eco::before {
+    content: "";
+    width: 32px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: url("../img/icon-feature-flower.svg") no-repeat;
+  }
+
+  &--style::before {
+    content: "";
+    width: 46px;
+    height: 27px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background: url("../img/icon-feature-money.svg") no-repeat;
+  }
+
+  &--like::before {
+    content: "";
+    width: 33px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    background: url("../img/icon-feature-heart.svg") no-repeat;
+  }
+
+  &--handmade::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    background: url("../img/icon-feature-ball.svg") no-repeat;
+  }
+
+  &--producer::before {
+    content: "";
+    width: 54px;
+    height: 23px;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: -5px;
+    background: url("../img/icon-feature-rocket.svg") no-repeat;
+  }
+
+  &--gift::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    background: url("../img/icon-feature-gift.svg") no-repeat;
+  }
+}

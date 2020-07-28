@@ -1,0 +1,42 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__logo {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 22px 0 16px 0;
+  background-color: $basic-white;
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 0 $basic-grey-light, inset 0 1px 0 $basic-grey-light;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+
+  &--open {
+    background: url("../img/icon-menu-open.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 14px;
+    top: 32px;
+    right: 31px;
+  }
+
+  &--close {
+    background: url("../img/icon-menu-close.svg") 0 0 no-repeat;
+    width: 21px;
+    height: 21px;
+    top: 29px;
+    right: 32px;
+  }
+}
