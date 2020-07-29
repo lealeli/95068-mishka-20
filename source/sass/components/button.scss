@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  width: 100%;
+  color: $basic-grey;
+  mix-blend-mode: normal;
+  border: 2px solid $basic-grey;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: $basic-white;
+  padding: 16px 0 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-grey;
+    color: $basic-white;
+  }
+
+  &:focus {
+    background-color: $basic-grey;
+    color: rgba($basic-white, 0.3);
+    outline: 1px solid $special-green;
+    box-sizing: border-box;
+  }
+}

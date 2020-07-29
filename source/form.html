@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
 <body class="page__body">
@@ -9,31 +10,31 @@
   <div class="page-header__wrapper">
     <nav class="main-nav">
       <a href="index.html" class="main-nav__logo">
-        <img src="https://via.placeholder.com/86x35" height="35" width="86" alt="Интернет-магазин «Мишка»">
+        <img src="img/logo-mobile.svg" height="35" width="86" alt="Интернет-магазин «Мишка»">
       </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle main-nav__toggle--open main-nav__toggle--close" type="button">
+        <span class="visually-hidden">Меню</span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a class="site-list__item-link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
         <li class="site-list__item">
-          <a href="">
+          <a class="site-list__item-link" href="form.html">
             Вязание на заказ
           </a>
         </li>
       </ul>
       <ul  class="main-nav__user-block user-list">
         <li class="user-list__item">
-          <a class="user-list__search" href="#">
+          <a class="user-list__item-link user-list__item-link--search" href="#">
             Поиск по сайту
           </a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__basket" href="#">
+          <a class="user-list__item-link user-list__item-link--basket" href="#">
             Корзина: пока пуста
           </a>
         </li>
@@ -134,13 +135,19 @@
   <div class="page-footer__wrapper">
     <ul class="page-footer__social social-list">
       <li class="social-list__item">
-        <img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Instagram">
+        <svg width="22" height="22">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#insta"></use>
+        </svg>
       </li>
       <li class="social-list__item">
-        <img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Facebook">
+        <svg width="15" height="28">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#fb"></use>
+        </svg>
       </li>
       <li class="social-list__item">
-        <img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Twitter">
+        <svg width="23" height="20">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#twitter"></use>
+        </svg>
       </li>
     </ul>
     <div class="page-footer__copyright copyright-info">
@@ -148,7 +155,9 @@
         Разработано
       </p>
       <a class="copyright-info__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTMLAcademy">
+        <svg width="23" height="20">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logohtml"></use>
+        </svg>
       </a>
     </div>
   </div>

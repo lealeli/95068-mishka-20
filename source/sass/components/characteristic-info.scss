@@ -1,0 +1,18 @@
+.characteristic-info {
+  color: $basic-grey;
+  line-height: 20px;
+  width: 100%;
+}
+
+.characteristic-info__item {
+  border-bottom: 1px solid $basic-grey-light;
+}
+
+.characteristic-info__name {
+  width: 94px;
+  padding: 11px 0 9px 0;
+}
+
+.characteristic-info__description {
+  padding: 11px 0 9px 0;
+}

@@ -1,0 +1,15 @@
+.main-banner__header-wrapper {
+  width: 320px;
+  background: url("../img/hero-mobile@1x.jpg") center 20% no-repeat;
+}
+
+.main-banner__header {
+  width: 260px;
+  padding: 73px 30px 120px 30px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $basic-black-half;
+}

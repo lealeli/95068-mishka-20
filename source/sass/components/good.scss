@@ -1,0 +1,43 @@
+.good {
+  width: 320px;
+  margin: 32px 0 0 0;
+  background: url(../img/bg-zigzag-line.svg) 0 100% no-repeat;
+  padding-bottom: 43px;
+  background-size: 100%;
+}
+
+.good__wrapper {
+  margin: 0 30px;
+}
+
+.good__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 3px 0;
+}
+
+.good__week {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $special-green;
+  text-transform: uppercase;
+}
+
+.good__description {
+  color: $basic-grey;
+}
+
+.good__price {
+  font-weight: bold;
+  font-size: 17px;
+  color: $basic-grey;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.good__img {
+  width: 260px;
+  margin: 28px 0 21px 0;
+}

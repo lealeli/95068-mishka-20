@@ -1,0 +1,26 @@
+.social-list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 23px 0 27px 0;
+  border-bottom: 1px solid $basic-grey-light-extra;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.social-list__item {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.social-list__link {
+  cursor: pointer;
+
+  &:hover {
+    fill: $special-green-light-half;
+  }
+
+  &:focus {
+    fill: rgba($special-green-light-half, 0.3);
+  }
+}
