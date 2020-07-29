@@ -1,0 +1,225 @@
+.page-form__wrapper {
+  background: $basic-grey-light-half;
+  padding: 73px 0;
+  text-align: center;
+}
+
+.page-form__header {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.page-form__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-grey;
+  margin: 17px 30px 0 30px;
+}
+
+.page-form__list {
+  margin: 30px 30px 57px 30px;
+}
+
+.page-form__item {
+  margin: 0 0 11px 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $special-green-light;
+  position: relative;
+}
+
+.page-form__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-green;
+  background-color: $basic-white;
+  padding-right: 20px;
+  margin-bottom: 25px;
+
+  &--info {
+    margin-bottom: 5px;
+  }
+}
+
+.page-form__value {
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 0 21px 62px;
+  width: auto;
+  height: 40px;
+
+  &--name {
+    padding: 2px 0 0 0;
+    height: 18px;
+  }
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $basic-grey;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  &--radio:hover::before {
+    border: 2px solid $special-green-light;
+  }
+
+  &--radio:focus::before {
+    outline: 1px solid $special-green-light;
+  }
+
+  &--radio:disabled::before {
+    opacity: 0.3;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $basic-grey;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+  }
+
+  &--checkbox:hover::before {
+    border: 2px solid $special-green-light;
+  }
+
+  &--checkbox:disabled::before {
+    opacity: 0.3;
+  }
+}
+
+.page-form__radio:checked + .page-form__value--radio::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid $special-green-light;
+  box-sizing: border-box;
+  background-color: $special-green-light;
+  border-radius: 50%;
+  top: 11px;
+  left: 11px;
+}
+
+.page-form__radio:focus + .page-form__value--radio::before {
+  outline: 1px solid $basic-grey;
+}
+
+.page-form__checkbox:checked + .page-form__value--checkbox {
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 18px;
+  background-position: 8px 12px;
+  top: 0;
+  left: 0;
+}
+
+.page-form__checkbox:focus + .page-form__value--checkbox::before {
+  outline: 1px solid $special-green;
+}
+
+.page-form__input-info {
+  width: 100%;
+  padding: 17px 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba($basic-black, 0.3);
+  border: none;
+  box-shadow: inset 0px -2px 0px #000000;
+  margin-bottom: 21px;
+
+  &--contact {
+    padding: 16px 0 20px 0;
+  }
+
+  &:hover {
+    box-shadow: inset 0px -2px 0px $special-green-light;
+  }
+
+  &:focus {
+    box-shadow: inset 0px -2px 0px $special-green-light;
+    color: $basic-grey;
+  }
+}
+
+.page-form__input-info[placeholder] {
+  color: rgba($basic-black, 0.3);
+}
+
+.page-form__value-tel {
+  display: block;
+  background: url("../img/icon-phone.svg") 0 0 no-repeat;
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  top: 32px;
+  right: 8px;
+  opacity: 0.2;
+}
+
+.page-form__input-info--contact:hover + .page-form__value-tel {
+  background: url("../img/icon-phone-color.svg") 0 0 no-repeat;
+  opacity: 1;
+}
+
+.page-form__value-email {
+  display: block;
+  background: url("../img/icon-mail.svg") 0 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 31px;
+  right: 4px;
+  opacity: 0.2;
+}
+
+.page-form__input-info--contact:hover + .page-form__value-email {
+  background: url("../img/icon-mail-color.svg") 0 0 no-repeat;
+  opacity: 1;
+}
+
+.page-form__input-text {
+  width: 100%;
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $font-family;
+  color: rgba($basic-black, 0.3);
+  border: 2px solid $basic-grey;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+
+  &:hover {
+    border: 2px solid $special-green-light;
+  }
+
+  &:focus {
+    border: 2px solid $special-green-light;
+    color: $basic-grey;
+  }
+}
+
+.page-form__extra {
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-grey;
+  margin: 0 0 31px 0;
+}
