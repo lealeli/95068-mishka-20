@@ -6,6 +6,11 @@
   border-bottom: 1px solid $basic-grey-light-extra;
   box-sizing: border-box;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 0;
+  }
 }
 
 .social-list__item {

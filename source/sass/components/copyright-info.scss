@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   padding: 12px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: flex-end;
+  }
 }
 
 .copyright-info__text {
@@ -15,6 +20,8 @@
 
 .copyright-info__link {
   fill: $special-green;
+  width: 27px;
+  height: 34px;
 
   &:hover {
     fill: $special-green-light-half;
