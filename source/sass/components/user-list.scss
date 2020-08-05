@@ -24,6 +24,8 @@
   }
 
   &--search {
+    padding-bottom: 29px;
+
     @media (min-width: $tablet-width) {
       padding: 36px 0 34px 52px;
       width: 32px;

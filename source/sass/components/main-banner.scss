@@ -1,6 +1,6 @@
 .main-banner {
   width: 100%;
-  background: url("../img/hero-mobile@1x.jpg") center 0 no-repeat;
+  background: url("../img/hero-mobile@1x.jpg") center -18px no-repeat;
 
   @media (min-width: $tablet-width) {
     background: url("../img/hero-tablet@1x.jpg") center 0 no-repeat;
@@ -22,9 +22,10 @@
       position: absolute;
       width: 100%;
       height: 24px;
-      bottom: -12px;
+      bottom: -10px;
       left: 0;
-      background: url("../img/bg-zigzag-fill.svg")  center 0 repeat-x;
+      background: url(../img/bg-zigzag-fill.svg) repeat-x;
+      background-size: 100% 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -48,7 +49,7 @@
     font-size: 43px;
     line-height: 50px;
     width: 510px;
-    padding: 155px 30px 372px 30px;
+    padding: 155px 36px 372px 30px;
   }
 
   @media (min-width: $desktop-width) {

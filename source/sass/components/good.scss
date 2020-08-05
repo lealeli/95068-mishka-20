@@ -4,6 +4,10 @@
   background: url(../img/bg-zigzag-line.svg) 0 100% no-repeat;
   padding-bottom: 43px;
   background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 52px 0 0 0;
+  }
 }
 
 .good__wrapper {
@@ -16,6 +20,12 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 39px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 110px auto auto;
   }
 }
 
@@ -23,16 +33,20 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  margin: 0 0 3px 0;
+  margin: 0 0 6px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    grid-column-start: span 2;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    position: absolute;
+    top: 75px;
+    left: 147px;
   }
 }
 
@@ -51,6 +65,18 @@
     text-align: center;
     align-self: center;
     padding-right: 10px;
+    position: absolute;
+    top: 6px;
+    right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column: 1;
+    align-self: start;
+    margin-top: 88px;
+    position: relative;
   }
 }
 
@@ -60,6 +86,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin: 31px 0 6px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 150px 0 0 0;
   }
 }
 
@@ -67,23 +98,39 @@
   font-weight: bold;
   font-size: 17px;
   color: $basic-grey;
-  margin: 0 0 24px 0;
+  margin: 0 0 21px 0;
   width: 100%;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    justify-content: end;
   }
 }
 
 .good__img {
-  width: 260px;
+  width: 100%;
   margin: 28px 0 21px 0;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column: 2;
+    width: 50%;
+    margin: 43px 0 0 0;
+    line-height: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column: 3;
+  }
+}
+
+.good__button {
+  @media (min-width: $tablet-width) {
+    justify-content: end;
   }
 }

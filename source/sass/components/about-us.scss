@@ -4,10 +4,28 @@
 
 .about-us__wrapper {
   margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 225px;
+  }
 }
 
 .about-us__header {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
