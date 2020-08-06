@@ -2,6 +2,18 @@
   background: $basic-grey-light-half;
   padding: 73px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -64px;
+    background: $basic-grey-light-half url("../img/bg-zigzag-fill.svg") 0 101% repeat-x;
+    background-size: 770px 24px;
+    padding: 102px 0 84px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 0 110px 0;
+    background-size: 1150px 34px;
+  }
 }
 
 .page-form__header {
@@ -9,6 +21,15 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .page-form__text {
@@ -16,10 +37,22 @@
   line-height: 24px;
   color: $basic-grey;
   margin: 17px 30px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px 50px 0 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 98px 225px 0 225px;
+  }
 }
 
 .page-form__list {
   margin: 30px 30px 57px 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 30px 0 57px 0;
+  }
 }
 
 .page-form__item {
@@ -28,7 +61,19 @@
   border: 0;
   border-top: 1px solid $special-green-light;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px 217px;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--bg {
+    background-color: $basic-grey-light-half;
+  }
 }
+
 
 .page-form__legend {
   font-weight: bold;
@@ -39,6 +84,13 @@
   background-color: $basic-white;
   padding-right: 20px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    top: 62px;
+    left: 50px;
+  }
 
   &--info {
     margin-bottom: 5px;
@@ -60,6 +112,18 @@
   &--name {
     padding: 2px 0 0 0;
     height: 18px;
+  }
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      width: 38%;
+    }
   }
 
   &--radio::before {
@@ -218,4 +282,8 @@
   line-height: 16px;
   color: $basic-grey;
   margin: 0 0 31px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 31px 30px;
+  }
 }
