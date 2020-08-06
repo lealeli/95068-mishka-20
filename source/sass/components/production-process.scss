@@ -1,10 +1,29 @@
 .production-process {
+  margin: 0 0 58px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 102px 0;
+  }
+}
+
+.production-process__wrapper {
+  margin: 0 30px;
   border: 1px solid $basic-grey-light;
   box-sizing: border-box;
-  margin: 0 30px 58px 30px;
   display: flex;
   flex-wrap: wrap;
-  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 682px auto;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .production-process__header {
@@ -14,6 +33,7 @@
   padding: 21px 0 26px 91px;
   position: relative;
   margin: 0;
+  width: 100%;
 
   &::before {
     content: "";
@@ -23,6 +43,28 @@
     background: url("../img/icon-video.svg") no-repeat;
     top: 29px;
     left: 33px;
+
+    @media (min-width: $tablet-width) {
+      top: 36px;
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      left: 78px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 43px 0 26px 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 95px 55px 22px 79px;
+    width: auto;
   }
 }
 
@@ -32,16 +74,45 @@
   color: $basic-grey;
   padding-left: 34px;
   margin: 35px 0 41px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 30px 0 40px;
+    margin: 0 0 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 30px 0 78px;
+  }
 }
 
 .production-process__button {
   width: 192px;
   margin: 0 34px 33px 34px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 100%;
+    margin: 0 42px 50px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 42px 63px 79px;
+    align-self: end;
+    width: 230px;
+  }
+
 }
 
 .production-process__video {
   line-height: 0;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: span 3;
+  }
 }
 
 .production-process__play {
@@ -54,12 +125,33 @@
   top: 37px;
   background: url("../img/icon-play.svg") no-repeat;
 
+
+  @media (min-width: $tablet-width) {
+    right: 43%;
+    top: 42%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 43%;
+    top: 42%;
+  }
+
   &:hover {
     background-size: 121px 92px;
     width: 121px;
     height: 92px;
     right: 71px;
     top: 29px;
+
+    @media (min-width: $tablet-width) {
+      right: 43%;
+      top: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 43%;
+      top: 42%;
+    }
   }
 
   &:focus {
@@ -69,5 +161,15 @@
     height: 62px;
     right: 91px;
     top: 44px;
+
+    @media (min-width: $tablet-width) {
+      right: 43%;
+      top: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 43%;
+      top: 42%;
+    }
   }
 }

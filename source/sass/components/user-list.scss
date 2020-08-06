@@ -23,6 +23,11 @@
     padding: 33px 42px 30px 83px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 33px 43px 30px 83px;
+  }
+
+
   &--search {
     padding-bottom: 29px;
 

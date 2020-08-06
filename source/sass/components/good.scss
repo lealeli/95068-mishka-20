@@ -1,9 +1,6 @@
 .good {
   width: 100%;
   margin: 30px 0 0 0;
-  background: url(../img/bg-zigzag-line.svg) 0 100% no-repeat;
-  padding-bottom: 43px;
-  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 52px 0 0 0;
@@ -11,21 +8,31 @@
 }
 
 .good__wrapper {
-  margin: 0 30px;
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
+  background: url(../img/bg-zigzag-line.svg) 0 100% repeat-x;
+  padding-bottom: 43px;
+  background-size: 300px 6px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
+    margin: 0;
+    padding: 0 50px 70px 50px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
-    grid-column-gap: 39px;
+    grid-column-gap: 43px;
+    align-items: end;
     position: relative;
+    background-size: 770px 17px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 110px auto auto;
+    margin: 0 50px;
+    padding: 0 0 95px 32px;
+    grid-template-columns: 100px auto auto;
+    grid-template-rows: auto auto 137px 85px;
+    background-size: 1149px 23px;
   }
 }
 
@@ -45,8 +52,8 @@
     font-size: 53px;
     line-height: 57px;
     position: absolute;
-    top: 75px;
-    left: 147px;
+    top: 81px;
+    left: 175px;
   }
 }
 
@@ -66,8 +73,8 @@
     align-self: center;
     padding-right: 10px;
     position: absolute;
-    top: 6px;
-    right: 3px;
+    top: 7px;
+    right: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +84,9 @@
     align-self: start;
     margin-top: 88px;
     position: relative;
+    top: 0;
+    right: 0;
+    padding: 0;
   }
 }
 
@@ -86,11 +96,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin: 31px 0 6px 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 0 0 0;
+    margin-top: 123px;
   }
 }
 
@@ -106,6 +116,12 @@
     font-size: 20px;
     line-height: 24px;
     justify-content: end;
+    margin: 0;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -126,6 +142,8 @@
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column: 3;
+    padding-left: 15px;
+    margin: 19px 0 0 0;
   }
 }
 

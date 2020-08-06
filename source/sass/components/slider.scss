@@ -11,13 +11,18 @@
     background-color: transparent;
     border: 0;
     position: absolute;
-    bottom: 150px;
-    right: 0;
+    bottom: 131px;
+    right: -21px;
+    width: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 194px;
   }
 
   &--previous {
     @media (min-width: $tablet-width) {
-      right: 130px;
+      right: 143px;
     }
   }
 

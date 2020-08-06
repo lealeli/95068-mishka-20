@@ -25,12 +25,13 @@
       bottom: -10px;
       left: 0;
       background: url(../img/bg-zigzag-fill.svg) repeat-x;
-      background-size: 100% 24px;
+      background-size: 770px 24px;
     }
 
     @media (min-width: $desktop-width) {
       height: 34px;
       bottom: -17px;
+      background-size: 1150px 34px;
     }
   }
 }

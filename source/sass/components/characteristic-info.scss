@@ -3,8 +3,12 @@
   line-height: 20px;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 175px;
+    padding-top: 0;
   }
 }
 

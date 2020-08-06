@@ -40,7 +40,7 @@
 
   &:first-child {
     @media (min-width: $desktop-width) {
-      padding: 33px 34px 30px 50px;
+      padding: 33px 36px 30px 50px;
     }
   }
 }
@@ -62,5 +62,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
