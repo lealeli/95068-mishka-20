@@ -2,11 +2,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+  }
 }
 
 .submenu-list__item {
   margin: 0;
+  width: 100%;
 
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .submenu-list__item-link {
@@ -15,9 +25,15 @@
   line-height: 24px;
   color: $basic-white;
   text-decoration: none;
-  width: 130px;
-  padding: 24px 160px 31px 30px;
+  width: auto;
+  padding: 24px 0 31px 30px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 0 34px 36px;
+  }
 }
 
 .submenu-list__item-link--interior {

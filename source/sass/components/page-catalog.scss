@@ -2,6 +2,19 @@
   background: $basic-grey-light-half;
   padding: 73px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -64px;
+    background: $basic-grey-light-half url("../img/bg-zigzag-fill.svg") 0 101% repeat-x;
+    background-size: 770px 24px;
+    padding: 102px 0 84px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 1150px 34px;
+    padding: 102px 0 110px 0;
+    background: $basic-grey-light-half url("../img/bg-zigzag-fill.svg") 0 101% repeat-x;
+  }
 }
 
 .page-catalog__header {
@@ -9,8 +22,30 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .page-catalog__goods {
   margin: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px 50px 52px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 115px 50px 0 50px;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    justify-content: center;
+  }
 }

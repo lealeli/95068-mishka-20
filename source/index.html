@@ -2,65 +2,84 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav">
-        <a href="" class="main-nav__logo">
+    <nav class="main-nav">
+      <a href="" class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg" height="35" width="86" alt="Интернет-магазин «Мишка»">
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <ul  class="main-nav__user-block user-list">
-          <li class="user-list__item">
-            <a class="user-list__item-link user-list__item-link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__item-link user-list__item-link--basket" href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        </picture>
+      </a>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <ul  class="main-nav__user-block user-list">
+        <li class="user-list__item user-list__item--search">
+          <a class="user-list__item-link user-list__item-link--search" href="#">
+            <svg class="user-list__item-img user-list__item-img--search" width="27" height="34">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#search"></use>
+            </svg>
+            <span class="user-list__item-text user-list__item-text--search">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__item-link" href="#">
+            <svg class="user-list__item-img" width="27" height="34">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#cart"></use>
+            </svg>
+            <span class="user-list__item-text">Корзина: пока пуста</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list sale-list">
+        <li class="sale-list__item">
+          <a class="sale-list__item-link" href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="sale-list__item">
+          <a class="sale-list__item-link" href="#">
+            Распродажа
+          </a>
+        </li>
+      </ul>
+      <span class="main-nav__delivery">Бесплатная доставка по России</span>
+    </nav>
   </header>
 
   <main class="page-main">
     <section class="main-banner">
       <div class="main-banner__wrapper">
-        <div  class="main-banner__header-wrapper">
-          <h1 class="main-banner__header">
-            Милые штуки ручной<br>работы для дома
-          </h1>
-        </div>
-
+        <h1 class="main-banner__header">
+          Милые штуки ручной<br>работы для дома
+        </h1>
         <ul class="main-banner__list submenu-list">
           <li class="submenu-list__item">
             <a class="submenu-list__item-link submenu-list__item-link--interior" href="#">
-              Предметы интерьера
+              Предметы<br>интерьера
             </a>
           </li>
           <li class="submenu-list__item">
             <a class="submenu-list__item-link submenu-list__item-link--toys" href="#">
-              Детские игрушки
+              Детские<br>игрушки
             </a>
           </li>
         </ul>
@@ -72,8 +91,8 @@
           Вязаные корзинки
         </h2>
         <span class="good__week">
-        Товар недели
-      </span>
+          Товар недели
+        </span>
         <p class="good__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
@@ -92,12 +111,16 @@
           </tr>
         </table>
         <div class="good__img">
-          <img src="img/triple-set-mobile@1x.jpg" height="315" width="260" alt="Интернет-магазин «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели">
+          </picture>
         </div>
         <p class="good__price">
           Цена: 990 руб.
         </p>
-        <button class="button">
+        <button class="button good__button">
           Заказать
         </button>
       </div>
@@ -110,22 +133,22 @@
         </h2>
         <ul class="about-us__header-list list-advantages">
           <li class="list-advantages__item list-advantages__item--eco">
-            Экологически чистые материалы
+            Экологически<br>чистые материалы
           </li>
           <li class="list-advantages__item list-advantages__item--style">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль<br>по российской цене
           </li>
           <li class="list-advantages__item list-advantages__item--like">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки<br>на фотографиях
           </li>
           <li class="list-advantages__item list-advantages__item--handmade">
-            Связано вручную с любовью и умилением
+            Связано вручную с<br>любовью и умилением
           </li>
           <li class="list-advantages__item list-advantages__item--producer">
-            Поддержка отечественного производителя
+            Поддержка отечественного<br>производителя
           </li>
           <li class="list-advantages__item list-advantages__item--gift">
-            Поставляется в подарочной упаковке
+            Поставляется в<br>подарочной упаковке
           </li>
         </ul>
       </div>
@@ -162,14 +185,18 @@
         </h2>
         <dl class="contacts__info">
           <dt class="contacts__title">e-mail:</dt>
-          <dd class="contacts__characteristics"><a  class="contacts__characteristics-tel" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dd class="contacts__characteristics"><a  class="contacts__characteristics-email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt class="contacts__title">адрес:</dt>
           <dd class="contacts__characteristics">г.&nbspСанкт-Петербург, ул.&nbspБольшая Конюшенная,<br>д.&nbsp19/8, офис&nbsp101</dd>
         </dl>
       </div>
 
       <div class="contacts_map">
-        <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+          <img src="img/map-mobile@1x.jpg"alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
       </div>
 
       <div class="contacts__wrapper">
@@ -182,6 +209,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <a href="#" class="page-footer__logo">
+        <svg width="102" height="34">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logofooter"></use>
+        </svg>
+      </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link" aria-label="Instagram">
