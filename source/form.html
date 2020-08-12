@@ -110,15 +110,20 @@
     <section class="page-form__item">
       <h2 class="page-form__legend">ФИО</h2>
 
-      <label class="page-form__value page-form__value--name" for="firstName">Имя:</label>
-      <input class="page-form__input-info" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*" required>
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="firstName">Имя:</label>
+        <input class="page-form__input-info" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*" required>
+      </div>
 
-      <label class="page-form__value page-form__value--name" for="lastName">Фамилия:</label>
-      <input class="page-form__input-info" type="text" id="lastName" name="lastName" placeholder="Укажите фамилию*" required>
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="lastName">Фамилия:</label>
+        <input class="page-form__input-info" type="text" id="lastName" name="lastName" placeholder="Укажите фамилию*" required>
+      </div>
 
-      <label class="page-form__value page-form__value--name" for="middleName">Отчество:</label>
-      <input class="page-form__input-info" type="text" id="middleName" name="middleName" placeholder="Отчество, если желаете">
-
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="middleName">Отчество:</label>
+        <input class="page-form__input-info" type="text" id="middleName" name="middleName" placeholder="Отчество, если желаете">
+      </div>
     </section>
 
     <section class="page-form__item page-form__item--bg">
@@ -146,7 +151,7 @@
       *Поля обязательны для заполнения
     </p>
 
-    <button class="button" type="submit">
+    <button class="button page-form__button" type="submit">
       Отправить заказ
     </button>
   </form>
