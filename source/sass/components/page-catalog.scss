@@ -11,9 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 1150px 34px;
     padding: 102px 0 110px 0;
-    background: $basic-grey-light-half url("../img/bg-zigzag-fill.svg") 0 101% repeat-x;
+    background-size: 1150px 34px;
   }
 }
 

@@ -75,18 +75,18 @@
   </p>
 
   <form class="page-form__list" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="page-form__item">
-      <legend class="page-form__legend">Тип</legend>
+    <section class="page-form__item">
+      <h2 class="page-form__legend">Тип</h2>
 
       <input class="page-form__radio visually-hidden" type="radio" id="interior" name="type"  value="interior" checked>
       <label class="page-form__value page-form__value--radio" for="interior">Аксессуар для интерьера</label>
 
       <input class="page-form__radio visually-hidden" type="radio" id="toy" name="type" value="toy">
       <label class="page-form__value page-form__value--radio" for="toy">Детская игрушка</label>
-    </fieldset>
+    </section>
 
-    <fieldset class="page-form__item">
-      <legend class="page-form__legend">Цвет</legend>
+    <section class="page-form__item page-form__item--bg page-form__item--checkbox">
+      <h2 class="page-form__legend">Цвет</h2>
 
       <input class="page-form__checkbox visually-hidden" type="checkbox" id="colorChoice1" name="color" value="white" checked>
       <label class="page-form__value page-form__value--checkbox" for="colorChoice1">Белый</label>
@@ -105,48 +105,53 @@
 
       <input class="page-form__checkbox visually-hidden" type="checkbox" id="colorChoice6" name="color" value="orange">
       <label class="page-form__value page-form__value--checkbox" for="colorChoice6">Оранжевый</label>
-    </fieldset>
+    </section>
 
-    <fieldset class="page-form__item">
-      <legend class="page-form__legend">ФИО</legend>
+    <section class="page-form__item page-form__item--name">
+      <h2 class="page-form__legend">ФИО</h2>
 
-      <label class="page-form__value page-form__value--name" for="firstName">Имя:</label>
-      <input class="page-form__input-info" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*" required>
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="firstName">Имя:</label>
+        <input class="page-form__input-info" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*" required>
+      </div>
 
-      <label class="page-form__value page-form__value--name" for="lastName">Фамилия:</label>
-      <input class="page-form__input-info" type="text" id="lastName" name="lastName" placeholder="Укажите фамилию*" required>
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="lastName">Фамилия:</label>
+        <input class="page-form__input-info" type="text" id="lastName" name="lastName" placeholder="Укажите фамилию*" required>
+      </div>
 
-      <label class="page-form__value page-form__value--name" for="middleName">Отчество:</label>
-      <input class="page-form__input-info" type="text" id="middleName" name="middleName" placeholder="Отчество, если желаете">
+      <div class="page-form__value-wrapper">
+        <label class="page-form__value page-form__value--name" for="middleName">Отчество:</label>
+        <input class="page-form__input-info" type="text" id="middleName" name="middleName" placeholder="Отчество, если желаете">
+      </div>
+    </section>
 
-    </fieldset>
-
-    <fieldset class="page-form__item">
-      <legend class="page-form__legend page-form__legend--info">Тел</legend>
+    <section class="page-form__item page-form__item--bg page-form__item--tel">
+      <h2 class="page-form__legend page-form__legend--info">Тел</h2>
 
       <input class="page-form__input-info page-form__input-info--contact" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}">
       <label class="page-form__value-tel" for="tel"></label>
-    </fieldset>
+    </section>
 
-    <fieldset class="page-form__item">
-      <legend class="page-form__legend page-form__legend--info">E-mail</legend>
+    <section class="page-form__item page-form__item--bg page-form__item--email">
+      <h2 class="page-form__legend page-form__legend--info page-form__legend--email">E-mail</h2>
 
       <input class="page-form__input-info page-form__input-info--contact" type="email" id="email" name="email" placeholder="Ваш Email*" required>
       <label class="page-form__value-email" for="email"></label>
-    </fieldset>
+    </section>
 
-    <fieldset class="page-form__item page-form__legend--info">
-      <legend class="page-form__legend">Доп</legend>
+    <section class="page-form__item page-form__item--info">
+      <h2 class="page-form__legend page-form__legend--info">Доп</h2>
 
       <textarea  class="page-form__input-text" id="add" name="add" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       <label for="add"></label>
-    </fieldset>
+    </section>
 
     <p class="page-form__extra">
       *Поля обязательны для заполнения
     </p>
 
-    <button class="button" type="submit">
+    <button class="button page-form__button" type="submit">
       Отправить заказ
     </button>
   </form>
