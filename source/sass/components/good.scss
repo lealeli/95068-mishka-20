@@ -148,6 +148,21 @@
   }
 }
 
+.good__img img {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 333px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: auto;
+  }
+}
+
 .good__button {
   @media (min-width: $tablet-width) {
     justify-content: end;

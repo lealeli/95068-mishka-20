@@ -119,7 +119,7 @@
   }
 }
 
-.contacts_map {
+.contacts__map {
   margin-bottom: 35px;
   position: relative;
   text-align: center;
@@ -149,6 +149,21 @@
       right: 44%;
       top: 138px;
     }
+  }
+}
+
+.contacts__map img {
+  width: 320px;
+  height: 457px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: auto;
   }
 }
 

@@ -115,6 +115,21 @@
   }
 }
 
+.production-process__video img {
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    height: auto;
+  }
+}
+
 .production-process__play {
   position: absolute;
   border: 0;
