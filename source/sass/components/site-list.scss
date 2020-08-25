@@ -41,6 +41,7 @@
   &:first-child {
     @media (min-width: $desktop-width) {
       padding: 33px 36px 30px 50px;
+      box-shadow: 0 1px 0 $basic-grey-light, inset 0 1px 0 $basic-grey-light;
     }
   }
 }

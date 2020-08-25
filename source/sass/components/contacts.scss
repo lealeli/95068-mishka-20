@@ -160,9 +160,10 @@
     margin: 0 auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 230px;
     margin: 0;
+    padding: 14px 0 12px 0;
   }
 
 }
