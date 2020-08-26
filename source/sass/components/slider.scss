@@ -12,7 +12,7 @@
     border: 0;
     position: absolute;
     bottom: 131px;
-    right: -21px;
+    right: 29px;
     width: 50px;
   }
 
@@ -22,7 +22,7 @@
 
   &--previous {
     @media (min-width: $tablet-width) {
-      right: 143px;
+      right: 194px;
     }
   }
 
