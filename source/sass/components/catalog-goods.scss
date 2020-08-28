@@ -6,6 +6,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: auto;
   }
 }
 
@@ -26,18 +33,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
     align-content: flex-start;
     flex-direction: column;
     position: relative;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
 }
 
-.catalog-goods__img-link {
+.catalog-goods__link {
   margin: 0;
   line-height: 0;
 
@@ -50,7 +52,7 @@
   }
 }
 
-.catalog-goods__img-link img {
+.catalog-goods__img {
   width: 260px;
   height: 195px;
 
@@ -82,12 +84,15 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin: 28px 0 0 0;
+  margin: 27px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    margin: 26px 0 0 0;
+    margin: 26px 32px 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 26px 12px 0 0;
   }
 }
 
@@ -103,13 +108,17 @@
     font-size: 15px;
     flex-grow: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+  }
 }
 
 .catalog-goods__price {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  width: 182px;
+  width: 179px;
   margin: 23px 0 25px 0;
 
   @media (min-width: $tablet-width) {
@@ -118,27 +127,26 @@
 }
 
 .catalog-goods__basket {
-  background: url("../img/icon-cart.svg") 0 0 no-repeat;
   opacity: 0.2;
-  width: 20px;
-  height: 19px;
+  width: 21px;
+  height: 18px;
   display: block;
-  align-self: center;
-  padding-top: 10px;
+  align-self: flex-start;
+  padding-top: 22px;
 
   &:hover {
-    background: url("../img/icon-cart-color.svg") 0 0 no-repeat;
+    fill: $special-green;
     opacity: 1;
   }
 
   &:focus {
-    background: url("../img/icon-cart-color.svg") 0 0 no-repeat;
+    fill: $special-green;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 20px;
+    bottom: 32px;
     right: 34px;
   }
 }
