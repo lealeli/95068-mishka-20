@@ -16,7 +16,7 @@
 
 .reviews__wrapper {
   margin: 0 30px;
-  background: url(../img/bg-zigzag-line.svg) 0 100% no-repeat;
+  background: url("../img/bg-zigzag-line.svg") 0 100% no-repeat;
   display: flex;
   flex-wrap: wrap;
 
@@ -24,10 +24,15 @@
     margin: 0;
     padding: 0 50px;
     background: url("../img/review@1x.jpg") 0 0 no-repeat,
-    url(../img/bg-zigzag-line.svg) 0 100% repeat-x;
+      url("../img/bg-zigzag-line.svg") 0 100% repeat-x;
     padding-bottom: 100px;
     position: relative;
     background-size: auto, 770px 17px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background: url("../img/review@2x.jpg") 0 0 no-repeat,
+    url(../img/bg-zigzag-line.svg) 0 100% repeat-x;
   }
 
   @media (min-width: $desktop-width) {

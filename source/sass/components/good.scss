@@ -12,7 +12,7 @@
   padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
-  background: url(../img/bg-zigzag-line.svg) 0 100% repeat-x;
+  background: url("../img/bg-zigzag-line.svg") 0 100% repeat-x;
   padding-bottom: 43px;
   background-size: 300px 6px;
 
@@ -145,6 +145,21 @@
     grid-column: 3;
     padding-left: 15px;
     margin: 19px 0 0 0;
+  }
+}
+
+.good__img img {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 333px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: auto;
   }
 }
 

@@ -50,6 +50,21 @@
   }
 }
 
+.catalog-goods__img-link img {
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: auto;
+  }
+}
+
 .catalog-goods__header-link {
   text-decoration: none;
   color: $basic-black;
