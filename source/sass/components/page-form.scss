@@ -26,6 +26,7 @@
     font-size: 43px;
     line-height: 50px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
@@ -315,7 +316,7 @@
 }
 
 .page-form__checkbox:checked + .page-form__value--checkbox {
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 22px 18px;
   background-position: 8px 12px;
@@ -369,11 +370,11 @@
   }
 
   &:hover {
-    box-shadow: inset 0px -2px 0px $special-green-light;
+    box-shadow: inset 0 -2px 0 $special-green-light;
   }
 
   &:focus {
-    box-shadow: inset 0px -2px 0px $special-green-light;
+    box-shadow: inset 0 -2px 0 $special-green-light;
     color: $basic-grey;
   }
 }
