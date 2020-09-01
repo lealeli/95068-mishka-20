@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 50px 20px 50px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 0 175px;
   }
@@ -46,7 +47,6 @@
   }
 
   &::after {
-
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
@@ -56,6 +56,7 @@
       top: -23px;
       right: 5px;
     }
+
     @media (min-width: $desktop-width) {
       left: -112px;
       top: -18px;
@@ -180,5 +181,4 @@
     margin: 0;
     padding: 14px 0 12px 0;
   }
-
 }

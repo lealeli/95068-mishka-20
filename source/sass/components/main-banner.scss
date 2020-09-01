@@ -28,7 +28,6 @@
   position: relative;
 
   &::after {
-
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
@@ -36,7 +35,7 @@
       height: 24px;
       bottom: -10px;
       left: 0;
-      background: url(../img/bg-zigzag-fill.svg) repeat-x;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-size: 770px 24px;
     }
 
