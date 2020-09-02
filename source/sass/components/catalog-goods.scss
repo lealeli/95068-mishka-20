@@ -134,6 +134,7 @@
   display: block;
   align-self: flex-start;
   padding-top: 22px;
+  order: 10;
 
   &:hover {
     fill: $special-green;

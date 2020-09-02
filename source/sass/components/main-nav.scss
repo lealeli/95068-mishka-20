@@ -57,6 +57,11 @@
 .main-nav__toggle {
   position: absolute;
   border: none;
+  background: url("../img/icon-menu-close.svg") 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+  top: 29px;
+  right: 32px;
 
   &--open {
     background: url("../img/icon-menu-open.svg") 0 0 no-repeat;
@@ -66,13 +71,6 @@
     right: 31px;
   }
 
-  &--close {
-    background: url("../img/icon-menu-close.svg") 0 0 no-repeat;
-    width: 21px;
-    height: 21px;
-    top: 29px;
-    right: 32px;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -89,5 +87,17 @@
     color: $basic-grey;
     order: 1;
     padding: 20px 50px 20px 0;
+  }
+}
+
+.main-nav__list {
+  &--close {
+    display: none;
+  }
+}
+
+.main-nav__user-block {
+  &--close {
+    display: none;
   }
 }
