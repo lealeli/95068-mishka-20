@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background: url("../img/review@2x.jpg") 0 0 no-repeat,
-    url(../img/bg-zigzag-line.svg) 0 100% repeat-x;
+      url("../img/bg-zigzag-line.svg") 0 100% repeat-x;
     background-size: 350px 457px, 770px 17px;
   }
 
