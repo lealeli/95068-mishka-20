@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const terser = require("gulp-terser");
+const htmlmin = require('gulp-htmlmin');
 const del = require("del");
 
 
@@ -120,7 +121,8 @@ const html = () => {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build"));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 };
 
 exports.html = html;
