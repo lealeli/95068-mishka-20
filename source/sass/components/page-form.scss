@@ -51,7 +51,7 @@
 }
 
 .page-form__list {
-  margin: 30px 30px 57px 30px;
+  margin: 37px 30px 57px 30px;
 
   @media (min-width: $tablet-width) {
     margin: 10px 0 49px 0;
@@ -62,14 +62,14 @@
 }
 
 .page-form__item {
-  margin: 0 0 11px 0;
+  margin: 0 0 22px 0;
   padding: 0;
   border: 0;
-  border-top: 1px solid $special-green-light;
+  border-top: 1px solid #62d1ba;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 50px 30px 217px;
+    padding: 55px 50px 22px 217px;
     border: 0;
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +105,7 @@
 
   &--name {
     @media (min-width: $tablet-width) {
-      padding-bottom: 20px;
+      padding-bottom: 17px;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,7 +121,7 @@
 
   &--email {
     @media (min-width: $tablet-width) {
-      padding-bottom: 49px;
+      padding-bottom: 47px;
       padding-top: 23px;
     }
 
@@ -131,8 +131,10 @@
   }
 
   &--info {
+    margin: 0;
+
     @media (min-width: $tablet-width) {
-      padding-top: 48px;
+      padding-top: 31px;
     }
   }
 }
@@ -145,29 +147,36 @@
   text-transform: uppercase;
   color: $special-green;
   background-color: $basic-white;
-  padding-right: 20px;
-  margin-bottom: 25px;
+  padding-right: 16px;
+  margin: -8px 0 27px 0;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
     position: absolute;
-    top: 52px;
+    top: 79px;
     left: 50px;
   }
 
-
   @media (min-width: $desktop-width) {
-    top: 62px;
+    top: 73px;
     left: 112px;
   }
 
+  &--type {
+    @media (min-width: $desktop-width) {
+      top: 83px;
+    }
+  }
+
   &--info {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    padding-right: 25px;
   }
 
   &--email {
     @media (min-width: $tablet-width) {
-      top: 26px;
+      top: 46px;
     }
   }
 }
@@ -175,6 +184,11 @@
 .page-form__value-wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .page-form__value {
@@ -201,19 +215,25 @@
     height: 18px;
 
     @media (min-width: $tablet-width) {
-      padding: 10px 10px 10px 0;
+      padding: 11px 10px 10px 0;
     }
   }
 
   &--radio {
+    padding: 3px 0 13px 61px;
+
     @media (min-width: $tablet-width) {
       width: 100%;
+      padding: 6px 0 30px 81px;
     }
   }
 
   &--checkbox {
+    padding: 0 0 20px 61px;
+
     @media (min-width: $tablet-width) {
       width: 33%;
+      padding: 4px 0 32px 81px;
     }
   }
 
@@ -324,7 +344,7 @@
   font-family: $font-family;
 
   @media (min-width: $tablet-width) {
-    padding: 6px 0 11px 18px;
+    padding: 7px 0 11px 18px;
     font-size: 20px;
     margin-bottom: 32px;
     margin-left: 15px;
@@ -337,14 +357,15 @@
   }
 
   &--contact {
-    margin-bottom: 25px;
-    font-size: 19px;
+    margin-bottom: 21px;
+    font-size: 17px;
 
 
     @media (min-width: $tablet-width) {
       background-color: $basic-grey-light-half;
       margin: 0;
       padding: 8px 0 18px 18px;
+      font-size: 19px;
     }
   }
 
@@ -360,11 +381,10 @@
 
 .page-form__value-tel {
   display: block;
-  background: url("../img/icon-phone.svg") 0 0 no-repeat;
   width: 25px;
   height: 24px;
   position: absolute;
-  top: 32px;
+  top: 20px;
   right: 8px;
   opacity: 0.2;
 
@@ -379,17 +399,21 @@
 }
 
 .page-form__input-info--contact:hover + .page-form__value-tel {
-  background: url("../img/icon-phone-color.svg") 0 0 no-repeat;
+  fill: $special-green;
+  opacity: 1;
+}
+
+.page-form__input-info--contact:focus + .page-form__value-tel {
+  fill: $special-green;
   opacity: 1;
 }
 
 .page-form__value-email {
   display: block;
-  background: url("../img/icon-mail.svg") 0 0 no-repeat;
   width: 32px;
   height: 32px;
   position: absolute;
-  top: 31px;
+  top: 22px;
   right: 4px;
   opacity: 0.2;
 
@@ -404,7 +428,12 @@
 }
 
 .page-form__input-info--contact:hover + .page-form__value-email {
-  background: url("../img/icon-mail-color.svg") 0 0 no-repeat;
+  fill: $special-green;
+  opacity: 1;
+}
+
+.page-form__input-info--contact:focus + .page-form__value-email {
+  fill: $special-green;
   opacity: 1;
 }
 
@@ -417,7 +446,9 @@
   color: rgba($basic-black, 0.3);
   border: 2px solid $basic-grey;
   box-sizing: border-box;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  resize: none;
 
   &:hover {
     border: 2px solid $special-green-light;
@@ -436,14 +467,14 @@
   margin: 0 0 31px 0;
 
   @media (min-width: $tablet-width) {
-    margin: auto 50px auto 0;
+    margin: 33px 50px auto 0;
     order: 1;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 25px 224px auto 0;
+    margin: 18px 224px auto 0;
   }
 }
 
@@ -451,7 +482,7 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {

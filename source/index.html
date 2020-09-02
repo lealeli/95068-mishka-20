@@ -9,7 +9,7 @@
   <body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
-      <a href="" class="main-nav__logo">
+      <a href="" class="main-nav__logo" aria-label="Интернет-магазин товаров ручной работы для дома «Мишка»">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -33,7 +33,7 @@
       </ul>
       <ul  class="main-nav__user-block user-list">
         <li class="user-list__item user-list__item--search">
-          <a class="user-list__item-link user-list__item-link--search" href="#">
+          <a class="user-list__item-link user-list__item-link--search" href="#" aria-label="Поиск по сайту">
             <svg class="user-list__item-img user-list__item-img--search" width="27" height="34">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#search"></use>
             </svg>
@@ -42,7 +42,7 @@
         </li>
         <li class="user-list__item">
           <a class="user-list__item-link" href="#">
-            <svg class="user-list__item-img" width="27" height="34">
+            <svg class="user-list__item-img" width="21" height="18">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#cart"></use>
             </svg>
             <span class="user-list__item-text">Корзина: пока пуста</span>
@@ -112,9 +112,12 @@
         </table>
         <div class="good__img">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
+            <img class="good__img-item" src="img/triple-set-mobile@1x.jpg" width="260" height="315" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
           </picture>
         </div>
         <p class="good__price">
@@ -183,7 +186,7 @@
             </cite>
           </blockquote>
         </div>
-        <button class="slider__toggle slider__toggle--previous" type="button"></button><button class="slider__toggle slider__toggle--next" type="button"></button>
+        <button class="slider__toggle slider__toggle--previous" type="button" aria-label="Предыдущий отзыв"></button><button class="slider__toggle slider__toggle--next" type="button" aria-label="Следующий отзыв"></button>
         <a class="reviews__write button" href="form.html">Написать</a>
       </div>
     </section>
@@ -197,15 +200,18 @@
           <dt class="contacts__title">e-mail:</dt>
           <dd class="contacts__characteristics"><a  class="contacts__characteristics-email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt class="contacts__title">адрес:</dt>
-          <dd class="contacts__characteristics">г.&nbspСанкт-Петербург, ул.&nbspБольшая Конюшенная,<br>д.&nbsp19/8, офис&nbsp101</dd>
+          <dd class="contacts__characteristics">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8, офис&nbsp;101</dd>
         </dl>
       </div>
 
       <div class="contacts__map">
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img src="img/map-mobile@1x.jpg" height="457" width="320" srcset="img/map-mobile@2x.jpg 2x" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="contacts__map-img" src="img/map-mobile@1x.jpg" height="457" width="320" srcset="img/map-mobile@2x.jpg 2x" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </picture>
       </div>
 
@@ -220,7 +226,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="#" class="page-footer__logo">
-        <svg width="102" height="34">
+        <svg role="img" width="102" height="34" aria-label="Интернет-магазин товаров ручной работы «Мишка»">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logofooter"></use>
         </svg>
       </a>
@@ -252,7 +258,7 @@
           Разработано
         </p>
         <a class="copyright-info__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
+          <svg role="img" width="27" height="34" aria-label="HTML Academy">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logohtml"></use>
           </svg>
         </a>

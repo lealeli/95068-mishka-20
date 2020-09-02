@@ -17,12 +17,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 194px;
+    bottom: 190px;
+    right: -22px;
   }
 
   &--previous {
     @media (min-width: $tablet-width) {
       right: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 143px;
     }
   }
 

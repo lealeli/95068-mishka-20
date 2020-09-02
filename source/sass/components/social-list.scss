@@ -11,6 +11,9 @@
     padding: 0;
     border: 0;
   }
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .social-list__item {

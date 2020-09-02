@@ -42,7 +42,7 @@
       </li>
       <li class="user-list__item">
         <a class="user-list__item-link" href="#">
-          <svg class="user-list__item-img" width="27" height="34">
+          <svg class="user-list__item-img" width="21" height="18">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#cart"></use>
           </svg>
           <span class="user-list__item-text">Корзина: пока пуста</span>
@@ -76,7 +76,7 @@
 
   <form class="page-form__list" action="https://echo.htmlacademy.ru" method="post">
     <section class="page-form__item">
-      <h2 class="page-form__legend">Тип</h2>
+      <h2 class="page-form__legend page-form__legend--type">Тип</h2>
 
       <input class="page-form__radio visually-hidden" type="radio" id="interior" name="type"  value="interior" checked>
       <label class="page-form__value page-form__value--radio" for="interior">Аксессуар для интерьера</label>
@@ -130,14 +130,22 @@
       <h2 class="page-form__legend page-form__legend--info">Тел</h2>
 
       <input class="page-form__input-info page-form__input-info--contact" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}">
-      <label class="page-form__value-tel" for="tel"></label>
+      <label class="page-form__value-tel" for="tel">
+        <svg class="page-form__value-email-img" width="25" height="24">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#tel"></use>
+        </svg>
+      </label>
     </section>
 
     <section class="page-form__item page-form__item--bg page-form__item--email">
       <h2 class="page-form__legend page-form__legend--info page-form__legend--email">E-mail</h2>
 
       <input class="page-form__input-info page-form__input-info--contact" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-      <label class="page-form__value-email" for="email"></label>
+      <label class="page-form__value-email" for="email">
+        <svg class="page-form__value-email-img" width="32" height="32">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#email"></use>
+        </svg>
+      </label>
     </section>
 
     <section class="page-form__item page-form__item--info">
@@ -160,8 +168,8 @@
 
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="#" class="page-footer__logo">
-      <svg width="102" height="34">
+    <a href="index.html" class="page-footer__logo">
+      <svg role="img" width="102" height="34" aria-label="Интернет-магазин товаров ручной работы «Мишка»">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logofooter"></use>
       </svg>
     </a>
@@ -193,7 +201,7 @@
         Разработано
       </p>
       <a class="copyright-info__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="27" height="34">
+        <svg role="img" width="27" height="34" aria-label="HTML Academy">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-sprite.svg#logohtml"></use>
         </svg>
       </a>

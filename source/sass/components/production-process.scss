@@ -3,7 +3,11 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 102px 0;
+    margin: 0 0 59px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 5px 0 105px 0;
   }
 }
 
@@ -114,7 +118,7 @@
   }
 }
 
-.production-process__video img {
+.production-process__video-img {
   width: 260px;
   height: 150px;
 

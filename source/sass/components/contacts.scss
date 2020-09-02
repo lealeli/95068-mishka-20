@@ -92,7 +92,7 @@
   width: 183px;
   line-height: 30px;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -150,10 +150,15 @@
       right: 44%;
       top: 138px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 42%;
+      top: 143px;
+    }
   }
 }
 
-.contacts__map img {
+.contacts__map-img {
   width: 320px;
   height: 457px;
 
