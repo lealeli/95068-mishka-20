@@ -13,6 +13,7 @@
 .submenu-list__item {
   margin: 0;
   width: 100%;
+  align-self: flex-end;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -58,6 +59,10 @@
 
   &:hover {
     background: $special-green-half;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 41px;
+    }
   }
 
   &:hover::after {
@@ -96,6 +101,10 @@
 
   &:hover {
     background: $special-green-light-half;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 41px;
+    }
   }
 
   &:hover::after {

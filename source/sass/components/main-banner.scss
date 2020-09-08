@@ -22,6 +22,13 @@
 
 .main-banner__wrapper {
   position: relative;
+  height: 489px;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    height: 746px;
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -46,7 +53,7 @@
 
 .main-banner__header {
   width: 260px;
-  padding: 73px 30px 120px 30px;
+  padding: 73px 30px 0 30px;
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
@@ -58,13 +65,13 @@
     font-size: 43px;
     line-height: 50px;
     width: 510px;
-    padding: 155px 36px 372px 30px;
+    padding: 155px 36px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     width: 700px;
-    padding: 158px 30px 355px 30px;
+    padding: 158px 30px 0 30px;
   }
 }

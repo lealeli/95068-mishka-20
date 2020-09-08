@@ -2,6 +2,8 @@ let menu = document.querySelector(".main-nav__toggle");
 let subMenuFirst = document.querySelector(".main-nav__list");
 let subMenuSecond = document.querySelector(".main-nav__user-block");
 
+clickMenu();
+
 menu.addEventListener("click", clickMenu);
 
 function clickMenu() {
